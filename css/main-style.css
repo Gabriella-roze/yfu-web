@@ -11,18 +11,29 @@
     --text-font: 'Open Sans', sans-serif;
 }
 
+
 /***  GENERAL STYLING  ***/
 body {
     margin: 0px;
     padding: 0px;
     font-family: var(--text-font);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
 }
 li {
     list-style-type: none;
 }
+video {
+    width: 100%    !important;
+    height: auto   !important;
+}
+
 
 /*** Menu ***/
 nav {
+    width: 100vw;
     height: 60px;
     background-color: var(--accent-color-light-grey);
     color: var(--accent-color-purple);
