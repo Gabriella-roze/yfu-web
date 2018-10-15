@@ -43,6 +43,8 @@ nav {
     font-size: 12px;
     font-weight: bolder;
     border-bottom: 2px solid var(--accent-color-purple);
+    position: sticky;
+    z-index: 2;
 }
 ul {
     display: flex;
@@ -100,6 +102,13 @@ li:hover {
     z-index: 2;
     top: 6%;
     right: 6%;
+}
+.img__chatbot {
+    max-height: 60px;
+    position: sticky;
+    z-index: 2;
+    bottom: 7%;
+    left: 90%;
 }
 
 
