@@ -17,14 +17,57 @@ body {
     padding: 0px;
     font-family: var(--text-font);
 }
+li {
+    list-style-type: none;
+}
+
+/*** Menu ***/
 nav {
-    height: 90px;
+    height: 60px;
     background-color: var(--accent-color-light-grey);
     color: var(--accent-color-purple);
     display: flex;
-
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    font-weight: bolder;
+    border-bottom: 2px solid var(--accent-color-purple);
 }
-/*** Menu ***/
+ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 65%;
+    color: rgba(100, 40, 105, .8);
+}
+.current {
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--accent-color-purple);
+}
 .logo--yfu {
-    height: 80px;
+    height: 60px;
+    padding-left: 10px;
+}
+.email__menu {
+    border: 1px solid var(--accent-color-purple);
+    border-radius: 4px;
+    color: var(--accent-color-purple);
+}
+.email__menu p {
+    margin: 0px;
+    padding: 0px 5px;
+}
+.img--airplane {
+    height: 150px;
+    position: absolute;
+    z-index: 2;
+    top: 10px;
+    left: 92%;
+}
+
+
+/*** TEXT STYLING ***/
+.text__details {
+    font-size: 10px;
 }
