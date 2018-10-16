@@ -12,6 +12,7 @@
 }
 
 
+
 /***  GENERAL STYLING  ***/
 body {
     margin: 0px;
@@ -29,6 +30,15 @@ video {
     width: 100%    !important;
     height: auto   !important;
 }
+.absolute {
+    position: absolute;
+}
+.relative {
+    position: relative;
+}
+
+
+
 
 
 /*** Menu ***/
@@ -44,7 +54,8 @@ nav {
     font-weight: bolder;
     border-bottom: 2px solid var(--accent-color-purple);
     position: sticky;
-    z-index: 2;
+    z-index: 3;
+    top: 0px;
 }
 ul {
     display: flex;
@@ -81,25 +92,27 @@ li:hover {
 }
 
 
+
 /*** IMAGES ***/
+.img {
+    height: 160px;
+}
 .img--airplane {
     height: 140px;
     position: absolute;
     z-index: 2;
     top: 12px;
-    left: 89%;
+    right: 1%;
 }
 .img__clouds--left {
-    max-height: 160px;
     position: absolute;
-    z-index: 2;
+    z-index: 3;
     top: 2%;
     left: 1%;
 }
 .img__clouds--right {
-    max-height: 160px;
     position: absolute;
-    z-index: 2;
+    z-index: 3;
     top: 6%;
     right: 6%;
 }
@@ -110,14 +123,114 @@ li:hover {
     bottom: 7%;
     left: 90%;
 }
-.img__globe {
-    max-height: 400px;
-    padding-top: 200px;
+.img__finger {
+    height: 130px;
+    top: 48%;
+    left: 13%;
+    z-index: 2;
+    transform: rotate(-10deg);
+    transform-origin: center;
+}
+.img__stars {
+    top: 70%;
+    right: 10%;
+}
+.img__boy {
+    border: 3px solid var(--accent-color-red);
+    border-radius: 50%;
 }
 
+
+
+/* Globe */
+.container__globe {
+    width: 100vw;
+    height: 170vh;
+    display: flex;
+    flex-direction: column;
+}
+.img__globe {
+    max-height: 500px;
+    padding-top: 15%;
+}
+#svg__buildings {
+    transform-origin: center;
+    animation: spin 150s linear infinite;
+}
+.cloud__title {
+    height: 230px;
+    width: 80%;
+    background: url("../img/cloud-title.png") no-repeat center;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    z-index: 1;
+}
+
+
+
+/* Review */
+.wrapper__review {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: white;
+}
+.section__review--grey {
+    width: 100vw;
+    height: 70vh;
+    background: var(--accent-color-light-grey);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 45%;
+    z-index: 0;
+}
 
 
 /*** TEXT STYLING ***/
 .text__details {
     font-size: 10px;
+}
+.text__title {
+    font-family: var(--display-font);
+    margin: 0px;
+    font-size: 1.7em;
+}
+.text__subtitle {
+    font-weight: normal;
+    font-size: .9em;
+    padding: 0px;
+    margin: 0px;
+}
+.text__subtitle--small {
+    font-size: 1em;
+}
+.text--purple {
+    color: var(--accent-color-purple);
+}
+.text--black {
+    color: var(--accent-color-black);
+}
+.paragraph--small {
+    width: 40%;
+    margin: 20px;
+}
+
+
+
+/*** ANIMATIONS ***/
+
+/* Keyframes */
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
 }
