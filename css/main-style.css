@@ -13,6 +13,15 @@
 
 
 
+/*** GRID ***/
+.grid__youtube {
+
+}
+.grid__forum {
+
+}
+
+
 /***  GENERAL STYLING  ***/
 body {
     margin: 0px;
@@ -21,7 +30,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /*overflow: hidden;*/
+
 }
 li {
     list-style-type: none;
@@ -54,7 +63,7 @@ video {
 }
 .heading--red {
     width: 100vw;
-    height: 100px;
+    height: 120px;
     background-color: var(--accent-color-red);
     display: flex;
     justify-content: center;
@@ -87,6 +96,10 @@ input {
 input::placeholder {
     color: lightgrey;
     padding: 10px;
+}
+footer {
+    width: 100vw;
+
 }
 
 
@@ -154,8 +167,10 @@ li:hover {
     height: 140px;
     position: absolute;
     z-index: 2;
-    top: 12px;
+    top: 25px;
     right: 1%;
+    transform-origin: center;
+    transform: rotate(10deg);
 }
 .img__clouds--left {
     position: absolute;
@@ -197,7 +212,7 @@ li:hover {
     right: 2%;
 }
 .img__envelope {
-    height: 170px;
+    height: 150px;
     transform-origin: center;
     transform: rotate(-20deg);
     top: 25%;
@@ -206,6 +221,22 @@ li:hover {
 .img__globe {
     max-height: 500px;
     padding-top: 15%;
+}
+.img__airplane--s {
+    height: 250px;
+    top: 50%;
+    right: 1%;
+}
+.img__star {
+    height: 400px;
+    transform-origin: center;
+    transform: rotate(-15deg);
+    top: -20%;
+    right: 5%;
+}
+.img__stars--bottom {
+    top: 50%;
+    left: 5%;
 }
 
 
@@ -302,11 +333,10 @@ li:hover {
     height: 60vh;
 }
 .newsletter {
-    margin-top: 100px;
-    width: 80vw;
+    width: 70vw;
     border: 1px solid var(--accent-color-light-grey);
     border-radius: 5px;
-    height: 80%;
+    height: 70%;
     box-shadow: 0px 10px 40px rgba(100, 40, 105, .3);
     display: flex;
     justify-content: center;
@@ -317,9 +347,37 @@ li:hover {
     margin-right: 10px;
 }
 #submit {
+    color: white;
+    background-color: var(--accent-color-purple);
+    font-weight: bold;
+    width: ;
+}
+
+
+/* Forum */
+.container__forum {
+
+}
+.forum__submenu {
+    padding: 2px 30%;
+    height: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(229, 68, 68, .6);
+}
+.forum {
 
 }
 
+
+/* Footer */
+.so-me {
+    width: 100%;
+}
+.contacts {
+
+}
 
 
 /*** TEXT STYLING ***/
@@ -336,9 +394,11 @@ li:hover {
     font-size: .9em;
     padding: 0px;
     margin: 0px;
+    text-align: center;
 }
 .text__subtitle--small {
     font-size: 1em;
+    text-align: center;
 }
 .text--purple {
     color: var(--accent-color-purple);
@@ -346,8 +406,11 @@ li:hover {
 .text--black {
     color: var(--accent-color-black);
 }
+.text--white {
+    color: white;
+}
 .paragraph--small {
-    width: 30%;
+    width: 40%;
     margin: 20px;
 }
 
