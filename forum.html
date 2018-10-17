@@ -39,7 +39,7 @@
             <h2 class="clickable forum-nav">PARENTS</h2>
             <h2 class="clickable forum-nav">PARTICIPANTS</h2>
         </div>
-        <img class="img relative img__stars--bottom" src="img/starts2.png" alt="Two doodle stars">
+        <img class="img absolute img__stars--bottom" src="img/starts2.png" alt="Two doodle stars">
         <div class="grid__forum">
             <article>
                 <h3 class="text--title--article text--purple">Scared to let my baby go! Help!</h3>
@@ -50,11 +50,11 @@
                         <img src="img/seen_167x38.png" alt="comments">
                     </div>
                     <div class="article--likes">
-                        <img src="img/hearth_20x16.png" alt="hearth">
+                        <img class="clickable" src="img/hearth_20x16.png" alt="hearth">
                         <p class="text--purple">14 Likes</p>
                     </div>
                     <div class="article--inte">
-                        <img src="img/interaction_22x20.png" alt="interaction">
+                        <img class="clickable" src="img/interaction_22x20.png" alt="interaction">
                         <p class="text--purple">30 interctions</p>
                     </div>
                 </section>
@@ -69,11 +69,11 @@
                         <img src="img/seen_167x38.png" alt="comments">
                     </div>
                     <div class="article--likes">
-                        <img src="img/hearth_20x16.png" alt="hearth">
+                        <img class="clickable" src="img/hearth_20x16.png" alt="hearth">
                         <p class="text--purple">14 Likes</p>
                     </div>
                     <div class="article--inte">
-                        <img src="img/interaction_22x20.png" alt="interaction">
+                        <img class="clickable" src="img/interaction_22x20.png" alt="interaction">
                         <p class="text--purple">30 interctions</p>
                     </div>
                 </section>
@@ -88,11 +88,11 @@
                         <img src="img/seen_167x38.png" alt="comments">
                     </div>
                     <div class="article--likes">
-                        <img src="img/hearth_20x16.png" alt="hearth">
+                        <img class="clickable" src="img/hearth_20x16.png" alt="hearth">
                         <p class="text--purple">14 Likes</p>
                     </div>
                     <div class="article--inte">
-                        <img src="img/interaction_22x20.png" alt="interaction">
+                        <img class="clickable" src="img/interaction_22x20.png" alt="interaction">
                         <p class="text--purple">30 interctions</p>
                     </div>
                 </section>
@@ -107,11 +107,11 @@
                         <img src="img/seen_167x38.png" alt="comments">
                     </div>
                     <div class="article--likes">
-                        <img src="img/hearth_20x16.png" alt="hearth">
+                        <img class="clickable" src="img/hearth_20x16.png" alt="hearth">
                         <p class="text--purple">14 Likes</p>
                     </div>
                     <div class="article--inte">
-                        <img src="img/interaction_22x20.png" alt="interaction">
+                        <img class="clickable" src="img/interaction_22x20.png" alt="interaction">
                         <p class="text--purple">30 interctions</p>
                     </div>
                 </section>
@@ -126,11 +126,11 @@
                         <img src="img/seen_167x38.png" alt="comments">
                     </div>
                     <div class="article--likes">
-                        <img src="img/hearth_20x16.png" alt="hearth">
+                        <img class="clickable" src="img/hearth_20x16.png" alt="hearth">
                         <p class="text--purple">14 Likes</p>
                     </div>
                     <div class="article--inte">
-                        <img src="img/interaction_22x20.png" alt="interaction">
+                        <img class="clickable" src="img/interaction_22x20.png" alt="interaction">
                         <p class="text--purple">30 interctions</p>
                     </div>
                 </section>
@@ -145,11 +145,11 @@
                         <img src="img/seen_167x38.png" alt="comments">
                     </div>
                     <div class="article--likes">
-                        <img src="img/hearth_20x16.png" alt="hearth">
+                        <img class="clickable" src="img/hearth_20x16.png" alt="hearth">
                         <p class="text--purple">14 Likes</p>
                     </div>
                     <div class="article--inte">
-                        <img src="img/interaction_22x20.png" alt="interaction">
+                        <img class="clickable" src="img/interaction_22x20.png" alt="interaction">
                         <p class="text--purple">30 interctions</p>
                     </div>
                 </section>
@@ -157,27 +157,27 @@
             </article>
             <section id="btn__section">
                 <button><img src="img/arrow-left.png"></button>
-                <button>1</button>
-                <button>2</button>
-                <button>3</button>
-                <button>4</button>
-                <button>5</button>
+                <button class="text--purple">1</button>
+                <button class="text--purple less--opacity">2</button>
+                <button class="text--purple less--opacity">3</button>
+                <button class="text--purple less--opacity">4</button>
+                <button class="text--purple less--opacity">5</button>
                 <button><img src="img/arrow-read-more_19x19.png"></button>
             </section>
             <section id="imput__section">
-                <div>
-                    <img src="">
-                    <input type="text" value="Type your name here">
+                <div id="imput--name">
+                    <img src="img/icon-person_93x93.png" alt="icon person">
+                    <input id="input_box" class="text--purple" type="text" placeholder="Type your name here">
                 </div>
-                <h3>Categories</h3>
+                <h3 class="text--purple">Categories</h3>
                 <div>
-                    <button>Parent</button>
-                    <button>Participant</button>
-                    <button>Volunteer</button>
-                    <button>General</button>
+                    <button class="text--purple">Parent</button>
+                    <button class="text--purple">Participant</button>
+                    <button class="text--purple">Volunteer</button>
+                    <button class="text--purple">General</button>
                 </div>
-                <input type="text" value="Type your question here">
-                <input type="Send" value="Send">
+                <textarea id="text-box" rows="5" cols="30" placeholder="Type your question here"></textarea>
+                <input id="send" type="submit">
             </section>
         </div>
     </section>
@@ -198,6 +198,6 @@
             <img class="absolute img__airplane--s" src="img/doodle-airplane.png" alt="A doodle of a paper airplane">
         </div>
     </section>
-    <img class="img__chatbot" src="img/chatbox.png" alt="Chat-bot icon">
+    <img class="img__chatbot clickable" src="img/chatbox.png" alt="Chat-bot icon">
 </body>
 </html>
