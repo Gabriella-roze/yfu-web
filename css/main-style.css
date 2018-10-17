@@ -18,7 +18,20 @@
 
 }
 .grid__forum {
+    display: grid;
+    grid-template-columns: 30% 1fr 30%;
+}
 
+.grid__forum article{
+    grid-column: 2/3;
+}
+
+.grid__forum #btn__section{
+    grid-column: 2/3;
+}
+
+.grid__forum #imput__section{
+    grid-column: 1/4;
 }
 
 
