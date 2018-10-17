@@ -2,6 +2,7 @@
 :root {
     /* Colors */
     --accent-color-red: #e54444;
+    --accent-color-light-purple: #642869;
     --accent-color-purple: #642869;
     --accent-color-light-grey: #f3f3f3;
     --accent-color-dark-grey: #464869;
@@ -13,13 +14,84 @@
 
 
 
+
+
 /*** GRID ***/
-.grid__youtube {
-
-}
 .grid__forum {
+    display: grid;
+    grid-template-columns: 20% 1fr 20%;
+}
+.grid__forum article{
+    grid-column: 2/3;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.grid__forum article .article--review{
+    display: grid;
+    grid-template-columns: 2.5fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+.article--review .article--viwers{
+    grid-column: 1/2;
+    align-self: center;
+}
+.article--review .article--likes{
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+.article--likes p{
+    align-self: center;
+}
+.article--likes img{
+    align-self: center;
+    justify-self: flex-end;
+    padding: 10px;
+}
+.article--review .article--inte{
+    grid-column: 3/4;
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+.article--inte p{
+    align-self: center;
+}
+.article--inte img{
+    align-self: center;
+    justify-self: flex-end;
+    padding: 10px;
+}
+article a{
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+}
+article a img{
+    padding-right: 10px;
+}
+
+.grid__forum #btn__section{
+    grid-column: 2/3;
+    justify-self: center;
+    display: flex;
+    flex-direction: row;
+}
+#btn__section button{
+    border: 0;
+    padding: 10px;
+    background-color: transparent;
+    text-align: center;
+
+
 
 }
+
+
+.grid__forum #imput__section{
+    grid-column: 1/4;
+}
+
+
 
 
 
@@ -36,22 +108,11 @@ body {
 li {
     list-style-type: none;
 }
-video {
-    width: 100%    !important;
-    height: auto   !important;
-}
 .absolute {
     position: absolute;
 }
 .relative {
     position: relative;
-}
-.rotate {
-    transform-origin: center;
-    transform: rotate(180deg);
-}
-.margin--20 {
-    margin: 20px;
 }
 .clickable {
     cursor: pointer;
@@ -71,23 +132,6 @@ video {
     align-items: center;
     color: white;
 }
-button {
-    color: white;
-    background-color: var(--accent-color-red);
-    font-size: 12px;
-    font-weight: bold;
-    padding: 10px 25px;
-    border: none;
-    border-radius: 5px;
-    transition: .3s ease-out;
-    margin: 10px;
-}
-button:hover {
-    opacity: 0.8;
-}
-form {
-    margin-left: 100px;
-}
 input {
     margin: 20px 0px;
     border: 1px solid var(--accent-color-purple);
@@ -102,6 +146,7 @@ footer {
     width: 100vw;
 
 }
+
 
 
 
@@ -156,13 +201,9 @@ li:hover {
 }
 
 
-
 /*** IMAGES ***/
 .img {
     height: 140px;
-}
-.img--m {
-    height: 200px;
 }
 .img--airplane {
     height: 140px;
@@ -192,36 +233,12 @@ li:hover {
     bottom: 7%;
     left: 90%;
 }
-.img__finger {
-    height: 130px;
-    top: 57%;
-    left: 15%;
-    z-index: 2;
-    transform: rotate(-10deg);
-    transform-origin: center;
-}
-.img__stars {
-    top: 80%;
-    right: 10%;
-}
-.img__boy {
-    border: 3px solid var(--accent-color-red);
-    border-radius: 50%;
-}
-.img__rocket {
-    top: 70%;
-    right: 2%;
-}
 .img__envelope {
     height: 150px;
     transform-origin: center;
     transform: rotate(-20deg);
     top: 25%;
     left: 10%;
-}
-.img__globe {
-    max-height: 500px;
-    padding-top: 15%;
 }
 .img__airplane--s {
     height: 250px;
@@ -238,93 +255,6 @@ li:hover {
 .img__stars--bottom {
     top: 50%;
     left: 5%;
-}
-
-
-
-/* Globe */
-.container__globe {
-    width: 100vw;
-    height: 145vh;
-    display: flex;
-    flex-direction: column;
-}
-#svg__buildings {
-    transform-origin: center;
-    animation: spin 150s linear infinite;
-}
-.cloud__title {
-    height: 230px;
-    width: 80%;
-    background: url("../img/cloud-title.png") no-repeat center;
-    background-size: contain;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 40%;
-    left: 10%;
-    z-index: 1;
-}
-
-
-
-/* Review */
-.wrapper__review {
-    width: 48%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    background: white;
-    flex-wrap: wrap;
-}
-.section__review--grey {
-    width: 100vw;
-    height: 70vh;
-    background: var(--accent-color-light-grey);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    top: 55%;
-    z-index: 0;
-}
-.arrow--left {
-
-}
-.arrow--right {
-
-}
-
-
-
-/* Instagram Feed */
-.instagram {
-    margin-top: 35px;
-}
-.hashtag {
-    top: 5%;
-    left: 10%;
-    transform-origin: center;
-    transform: rotate(-20deg);
-}
-.ig__logo {
-    height: 70px;
-    top: 30%;
-    right: 10%;
-    transform-origin: center;
-    transform: rotate(20deg);
-}
-.ig__text {
-
-}
-
-
-/* Youtube section */
-.container__youtube {
-    height: 120vh;
-    background-color: var(--accent-color-light-grey);
 }
 
 
@@ -355,6 +285,8 @@ li:hover {
 }
 
 
+
+
 /* Forum */
 .container__forum {
 
@@ -366,18 +298,6 @@ li:hover {
     justify-content: space-around;
     align-items: center;
     background-color: rgba(229, 68, 68, .6);
-}
-.forum {
-
-}
-
-
-/* Footer */
-.so-me {
-    width: 100%;
-}
-.contacts {
-
 }
 
 
@@ -410,18 +330,19 @@ li:hover {
 .text--white {
     color: white;
 }
+.text--grey {
+    color: var(--accent-color-dark-grey);
+}
 .paragraph--small {
     width: 40%;
     margin: 20px;
 }
-
-
-
-/*** ANIMATIONS ***/
-
-/* Keyframes */
-@keyframes spin {
-    to {
-        transform: rotate(360deg);
-    }
+.forum-nav{
+    font-size: 0.7em;
+}
+.text--title--article{
+    font-size: 1.1em;
+}
+.text--article{
+    font-size: 0.9em;
 }
