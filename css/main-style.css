@@ -168,6 +168,12 @@ li:hover {
 .img {
     height: 140px;
 }
+.img--small {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 3px solid var(--accent-color-red);
+}
 .img--m {
     height: 200px;
 }
@@ -212,6 +218,8 @@ li:hover {
     right: 10%;
 }
 .img__boy {
+    width: 150px;
+    height: 150px;
     border: 3px solid var(--accent-color-red);
     border-radius: 50%;
 }
@@ -245,6 +253,10 @@ li:hover {
 .img__stars--bottom {
     top: 50%;
     left: 5%;
+}
+.img__abstract {
+    bottom: -2%;
+    right: -2%;
 }
 
 
@@ -380,8 +392,27 @@ li:hover {
 
 /* Footer */
 .so-me {
-    width: 100%;
-    height: 40vh;
+    width: 70%;
+    padding-left: 15%;
+    padding-right: 15%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--accent-color-light-grey);
+}
+.so-me__paragraph {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.so-me__paragraph h4 {
+    margin-bottom: 0px;
+}
+.so-me__paragraph p {
+    text-align: center;
 }
 .contacts {
     width: 90%;
@@ -418,7 +449,6 @@ li:hover {
 
 
 
-
 /*** TEXT STYLING ***/
 .text__details {
     font-size: 10px;
@@ -438,6 +468,9 @@ li:hover {
 .text__subtitle--small {
     font-size: 1em;
     text-align: center;
+}
+.text--red {
+    color: var(--accent-color-red);
 }
 .text--purple {
     color: var(--accent-color-purple);
