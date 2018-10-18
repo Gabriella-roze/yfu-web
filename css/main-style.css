@@ -256,7 +256,7 @@ li:hover {
 }
 .img__abstract {
     bottom: -2%;
-    right: -2%;
+    right: 0;
 }
 
 
@@ -417,7 +417,6 @@ li:hover {
     text-align: center;
 }
 .contacts {
-    width: 90%;
     padding: 2% 5%;
     display: flex;
     justify-content: center;
