@@ -502,15 +502,15 @@ li:hover {
 
     #btn__section button{
         border: 0;
-        padding: 20px;
+        padding: 10px;
         background-color: transparent;
         text-align: center;
         font-family: var(--text-font);
         font-weight: bold;
-        font-size: 30px;
+        font-size: 17px;
     }
     #btn__section button img{
-        width: 50px;
+        width: 20px;
     }
 
 
@@ -541,18 +541,17 @@ li:hover {
         height: 60px;
     }
     #imput__section h3{
-        font-size: 2em;
+        font-size: 1.3em;
     }
     #imput__section div button{
         background-color: rgba(100, 40, 105, 0.3);
         border: none;
         font-family: var(--text-font);
-        font-size: 1.5em;
+        font-size: 0.7em;
         font-weight: bold;
         border-radius: 5px;
         padding: 10px 15px;
         margin: 5px;
-
     }
 
 
@@ -564,20 +563,23 @@ li:hover {
         padding: 2%;
         margin-top: 40px;
         margin-bottom: 10px;
-        font-size: 2em;
+        font-size: 1em;
     }
 
     #imput__section #send{
         font-family: var(--text-font);
-        font-size: 1.5em;
+        font-size: 1em;
         text-align: center;
         color: white;
         background-color: var(--accent-color-purple);
         font-weight: bold;
-        width: 200px;
-        height: 70px;
+        width: 150px;
+        height: 40px;
         border-radius: 5px;
     }
+
+
+
     .text--title--article{
         font-size: 1.1em;
         grid-row: 1/2;
@@ -592,6 +594,135 @@ li:hover {
         grid-row: 3/4;
     }
 
+
+
+    /*** IMAGES ***/
+    .img__star {
+        height: 200px;
+        transform-origin: center;
+        transform: rotate(-15deg);
+        top: 1%;
+        right: 5%;
+        opacity: 0.7;
+    }
+    .img__stars--bottom {
+        top: 20%;
+        left: 70%;
+        opacity: 0.7;
+    }
+    .img__clouds--left {
+        position: absolute;
+        z-index: 3;
+        top: 6%;
+        left: -15%;
+        height: 15%;
+    }
+    .img__clouds--right {
+        position: absolute;
+        z-index: 3;
+        top: 6%;
+        right: -10%;
+        height: 15%;
+    }
+
+    .forum__submenu {
+        padding: 2px 3%;
+        height: 40px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: rgba(229, 68, 68, .6);
+    }
+
+    /*** TEXT STYLING ***/
+    .text__details {
+        font-size: 10px;
+    }
+    .text__title {
+        font-family: var(--display-font);
+        margin: 0px;
+        font-size: 1.5em;
+    }
+    .text__subtitle {
+        font-weight: normal;
+        font-size: .7em;
+        padding: 0px;
+        margin: 0px;
+        text-align: center;
+    }
+
+    label .container {
+        position: absolute;
+        top: 135px;
+        left: 50px;
+        width: 30px;
+        height: 2px;
+    }
+
+    .bar1, .bar2, .bar3 {
+        width: 100px;
+        height: 6px;
+        background: #000;
+        border-radius: 10px;
+        margin: 20px 40px;
+        transition: 0.4s;
+    }
+
+    .change .bar1 {
+        transform: rotate(-45deg) translate(-25px, 6px);
+    }
+
+    .change .bar2 {opacity: 0;}
+
+    .change .bar3 {
+        transform: rotate(45deg) translate(-30px, -8px);
+    }
+
+    label input { display: none; }
+
+    #menu  {
+        position: absolute;
+        right: -100px;
+        top: -100px;
+        z-index: 100;
+        width: 300px;
+        height: 300px;
+        background: #FFF;
+        border-radius: 50% 50% 50% 50%;
+        -webkit-transition: .5s ease-in-out;
+        transition: .5s ease-in-out;
+        box-shadow: 0 0 0 0 #FFF, 0 0 0 0 #FFF;
+        cursor: pointer;
+    }
+
+    #menu.expand {
+        box-shadow: 0 0 0 100vw #FFF, 0 0 0 100vh #FFF;
+        border-radius: 0;
+    }
+
+
+    .appear {
+        opacity: 1
+    }
+
+    label ul {
+        z-index: 200;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        -webkit-transition: .25s 0s ease-in-out;
+        transition: .25s 0s ease-in-out;
+    }
+
+    label a {
+        margin-bottom: 1em;
+        display: block;
+        color: #000;
+        text-decoration: none;
+    }
 
 
 
