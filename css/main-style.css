@@ -224,8 +224,8 @@ li:hover {
     border-radius: 50%;
 }
 .img__rocket {
-    top: 70%;
-    right: 2%;
+    top: 75%;
+    right: 15%;
 }
 .img__envelope {
     height: 150px;
@@ -330,14 +330,16 @@ li:hover {
 }
 .ig__logo {
     height: 70px;
-    top: 30%;
+    top: 5%;
     right: 10%;
     transform-origin: center;
     transform: rotate(20deg);
 }
-.ig__text {
-
+.ig-feed {
+    padding: 5% 0 10%;
 }
+
+
 
 
 /* Youtube section */
