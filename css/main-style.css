@@ -11,18 +11,6 @@
     --text-font: 'Open Sans', sans-serif;
 }
 
-
-
-/*** GRID ***/
-.grid__youtube {
-
-}
-.grid__forum {
-
-}
-
-
-
 /***  GENERAL STYLING  ***/
 body {
     margin: 0px;
@@ -33,35 +21,44 @@ body {
     align-items: center;
 
 }
+
 li {
     list-style-type: none;
 }
+
 video {
-    width: 100%    !important;
-    height: auto   !important;
+    width: 100% !important;
+    height: auto !important;
 }
+
 .absolute {
     position: absolute;
 }
+
 .relative {
     position: relative;
 }
+
 .rotate {
     transform-origin: center;
     transform: rotate(180deg);
 }
+
 .margin--20 {
     margin: 20px;
 }
+
 .clickable {
     cursor: pointer;
 }
+
 .align--center {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
 .heading--red {
     width: 100vw;
     height: 120px;
@@ -71,6 +68,7 @@ video {
     align-items: center;
     color: white;
 }
+
 button {
     color: white;
     background-color: var(--accent-color-red);
@@ -82,34 +80,41 @@ button {
     transition: .3s ease-out;
     margin: 10px;
 }
+
 button:hover {
     opacity: 0.8;
 }
+
 form {
     margin-left: 100px;
 }
+
 input {
     margin: 20px 0px;
     border: 1px solid var(--accent-color-purple);
     height: 25px;
     border-radius: 2px;
 }
+
 input::placeholder {
     color: lightgrey;
     padding: 10px;
 }
+
 footer {
     width: 100vw;
 }
+
 a {
     text-decoration: none;
+    color: rgba(100, 40, 105, .3);
+
 }
+
 a:hover {
     color: var(--accent-color-purple);
     font-weight: 700;
 }
-
-
 
 
 /*** Menu ***/
@@ -128,6 +133,7 @@ nav {
     z-index: 3;
     top: 0px;
 }
+
 ul {
     display: flex;
     justify-content: space-around;
@@ -135,47 +141,58 @@ ul {
     width: 65%;
     color: rgba(100, 40, 105, .7);
 }
+
 li {
     cursor: pointer;
 }
+
 li:hover {
     color: rgba(100, 40, 105, .9);
     transition: .1s ease-out;
     transform: scale(1.05);
 }
+
 .current {
     font-size: 16px;
     font-weight: bold;
     color: var(--accent-color-purple);
 }
+
 .logo--yfu {
     height: 60px;
     padding-left: 10px;
 }
+
 .email__menu {
     border: 1px solid var(--accent-color-purple);
     border-radius: 4px;
     color: var(--accent-color-purple);
 }
+
 .email__menu p {
     margin: 0px;
     padding: 0px 5px;
 }
 
 
-
 /*** IMAGES ***/
 .img {
     height: 140px;
 }
+
 .img--small {
     height: 50px;
     width: 50px;
     border-radius: 50%;
     border: 3px solid var(--accent-color-red);
 }
+
 .img--m {
     height: 200px;
+}
+.img--long {
+    height: 400px;
+    width: 600px;
 }
 .img--airplane {
     height: 140px;
@@ -186,18 +203,21 @@ li:hover {
     transform-origin: center;
     transform: rotate(10deg);
 }
+
 .img__clouds--left {
     position: absolute;
     z-index: 3;
     top: 2%;
     left: 1%;
 }
+
 .img__clouds--right {
     position: absolute;
     z-index: 3;
     top: 6%;
     right: 6%;
 }
+
 .img__chatbot {
     max-height: 60px;
     position: sticky;
@@ -205,6 +225,7 @@ li:hover {
     bottom: 7%;
     left: 90%;
 }
+
 .img__finger {
     height: 130px;
     top: 57%;
@@ -213,20 +234,24 @@ li:hover {
     transform: rotate(-10deg);
     transform-origin: center;
 }
+
 .img__stars {
     top: 80%;
     right: 10%;
 }
+
 .img__boy {
     width: 150px;
     height: 150px;
     border: 3px solid var(--accent-color-red);
     border-radius: 50%;
 }
+
 .img__rocket {
     top: 75%;
     right: 15%;
 }
+
 .img__envelope {
     height: 150px;
     transform-origin: center;
@@ -234,15 +259,18 @@ li:hover {
     top: 25%;
     left: 10%;
 }
+
 .img__globe {
     max-height: 500px;
     padding-top: 15%;
 }
+
 .img__airplane--s {
     height: 250px;
     top: 50%;
     right: 1%;
 }
+
 .img__star {
     height: 400px;
     transform-origin: center;
@@ -250,16 +278,16 @@ li:hover {
     top: -20%;
     right: 5%;
 }
+
 .img__stars--bottom {
     top: 50%;
     left: 5%;
 }
+
 .img__abstract {
     bottom: -2%;
     right: 0;
 }
-
-
 
 /* Globe */
 .container__globe {
@@ -268,10 +296,12 @@ li:hover {
     display: flex;
     flex-direction: column;
 }
+
 #svg__buildings {
     transform-origin: center;
     animation: spin 150s linear infinite;
 }
+
 .cloud__title {
     height: 230px;
     width: 80%;
@@ -288,7 +318,6 @@ li:hover {
 }
 
 
-
 /* Review */
 .wrapper__review {
     width: 48%;
@@ -299,6 +328,7 @@ li:hover {
     background: white;
     flex-wrap: wrap;
 }
+
 .section__review--grey {
     width: 100vw;
     height: 70vh;
@@ -315,7 +345,6 @@ li:hover {
 .arrow--right {
 
 }
-
 
 
 /* Instagram Feed */
@@ -340,15 +369,41 @@ li:hover {
 }
 
 
-
-
 /* Youtube section */
 .container__youtube {
-    height: 120vh;
     background-color: var(--accent-color-light-grey);
 }
-
-
+.yt-gallery {
+    height: 45vh;
+    width: 100vw;
+    display: flex;
+    overflow-x: auto;
+    justify-content: center;
+    align-items: center;
+}
+.yt-gallery-title {
+    bottom: 20px;
+    padding: 0 2%;
+    left: 20px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(216, 219, 216);
+    opacity: 0.9;
+    color: purple;
+}
+.yt-gallery-play {
+    bottom: 40%;
+    left: 40%;
+    color: rgba(200, 0, 0, 0.9);
+}
+.yt-gallery-image {
+    flex-shrink: 0;
+    padding-top: 50px;
+    margin-right: 20px;
+    height: 250px;
+}
 
 /* Newsletter */
 .container__newsletter {
@@ -364,10 +419,12 @@ li:hover {
     justify-content: center;
     align-items: center;
 }
+
 #input__email {
     width: 200px;
     margin-right: 10px;
 }
+
 #submit {
     color: white;
     background-color: var(--accent-color-purple);
@@ -375,10 +432,12 @@ li:hover {
 }
 
 
+
 /* Forum */
 .container__forum {
 
 }
+
 .forum__submenu {
     padding: 2px 30%;
     height: 40px;
@@ -387,12 +446,15 @@ li:hover {
     align-items: center;
     background-color: rgba(229, 68, 68, .6);
 }
+
 .forum {
 
 }
+
 .current--red {
     background-color: var(--accent-color-red);
 }
+
 
 
 /* Footer */
@@ -405,6 +467,7 @@ li:hover {
     align-items: center;
     background-color: var(--accent-color-light-grey);
 }
+
 .so-me__paragraph {
     width: 25%;
     display: flex;
@@ -412,12 +475,15 @@ li:hover {
     justify-content: center;
     align-items: center;
 }
+
 .so-me__paragraph h4 {
     margin-bottom: 0px;
 }
+
 .so-me__paragraph p {
     text-align: center;
 }
+
 .contacts {
     padding: 2% 5%;
     display: flex;
@@ -425,24 +491,29 @@ li:hover {
     align-items: flex-start;
     background-color: var(--accent-color-red);
 }
+
 .paragraph__contacts {
     width: 25%;
     display: flex;
     height: 100%;
 }
+
 .contacts__text {
     height: 100%;
     display: flex;
     flex-direction: column;
     margin: 10px 0px 0px 10px;
 }
+
 .form__footer {
     display: flex;
     flex-direction: column;
 }
+
 .paragraph__contacts input {
     margin: 0px;
 }
+
 #submit__footer {
     height: 25px;
     color: white;
@@ -450,17 +521,17 @@ li:hover {
     font-weight: bold;
 }
 
-
-
 /*** TEXT STYLING ***/
 .text__details {
     font-size: 10px;
 }
+
 .text__title {
     font-family: var(--display-font);
     margin: 0px;
     font-size: 1.7em;
 }
+
 .text__subtitle {
     font-weight: normal;
     font-size: .9em;
@@ -468,26 +539,33 @@ li:hover {
     margin: 0px;
     text-align: center;
 }
+
 .text__subtitle--small {
     font-size: 1em;
     text-align: center;
 }
+
 .text--red {
     color: var(--accent-color-red);
 }
+
 .text--purple {
     color: var(--accent-color-purple);
 }
+
 .text--black {
     color: var(--accent-color-black);
 }
+
 .text--white {
     color: white;
 }
+
 .paragraph--small {
     width: 40%;
     margin: 20px;
 }
+
 .text__rotated {
     width: 80px;
     height: 30px;
@@ -496,13 +574,12 @@ li:hover {
     transform-origin: right;
     transform: rotate(-90deg);
 }
+
 .text--pacifico {
     font-family: var(--display-font);
     font-size: 14px;
     margin: 10px 0px;
 }
-
-
 
 /*** ANIMATIONS ***/
 

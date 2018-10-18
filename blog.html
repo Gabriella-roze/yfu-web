@@ -5,18 +5,20 @@
     <link rel="stylesheet" href="css/main-style.css">
     <link rel="stylesheet" href="css/blog-style.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Pacifico" rel="stylesheet">
-    <title>YFU Community Home</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <title>YFU Community Blog</title>
 </head>
 <body>
+<!-- MENU -->
 <nav>
     <img class="logo--yfu clickable" src="img/yfu-logo.png" alt="YFU logotype">
     <ul>
-        <li href="index.html">HOME</li>
-        <li class="current">BLOG</li>
-        <li>OUR CHANNEL</li>
-        <li>FORUM</li>
-        <li>YFU OFFICIAL</li>
-        <li>APPLY</li>
+        <a href="index.html"><li>HOME</li></a>
+        <a href="blog.html"><li class="current">BLOG</li></a>
+        <a href="http://www.youtube.com" target="_blank"><li>OUR CHANNEL</li></a>
+        <a href="forum.html"><li>FORUM</li></a>
+        <a href="https://www.yfu.dk/"><li>YFU OFFICIAL</li></a>
+        <a href="https://udveksling.yfu.dk/ansoeg" target="_blank"><li>APPLY</li></a>
         <div class="email__menu clickable">
             <p>STAY TUNED!</p>
             <p class="text__details">SIGN UP FOR OUR NEWSLETTER HERE</p>
@@ -26,6 +28,8 @@
 </nav>
 <img class="img img__clouds--left" src="img/clouds-left.png" alt="Clouds on the left">
 <img class="img img__clouds--right" src="img/clouds-right.png" alt="Clouds on the right">
+
+<!-- Chatbot -->
 <img class="img__chatbot" src="img/chatbox.png" alt="Chat-bot icon">
 <div class="heading--red">Blog spot</div>
 
@@ -42,14 +46,76 @@
     </article>
 </template>
 
+
+<!-- FOOTER -->
 <footer>
-    <section class="so-me">
-
+    <section class="so-me relative">
+        <div class="so-me__paragraph relative">
+            <img class="img__boy img" src="img/rocks.png" alt="Facebook picture">
+            <a href="https://www.facebook.com/yfudanmark/" target="_blank" class="absolute"><img class="img--small" src="img/facebook-logo.png" alt="Facebook logo"></a>
+            <h4 class="text--red">YFU FACEBOOK</h4>
+            <p class="text__details text--purple">THE HOME OF DETAILS AND INFORMATION</p>
+        </div>
+        <div class="so-me__paragraph relative">
+            <img class="img__boy img" src="img/swans.png" alt="Instagram picture">
+            <a class="absolute" href="https://www.instagram.com/yfudanmark/?hl=el" target="_blank"><img class="img--small" src="img/instagram-logo.png" alt="Instagram logo"></a>
+            <h4 class="text--red">YFU INSTAGRAM</h4>
+            <p class="text__details text--purple">THE HOME OF IMAGES</p>
+        </div>
+        <div class="so-me__paragraph relative">
+            <img class="img__boy img" src="img/italy.png" alt="Snapchat picture">
+            <a href="https://www.snapchat.com" target="_blank" class="absolute"><img class="img--small " src="img/snapchat-logo.png" alt="Snapchat logo"></a>
+            <h4 class="text--red">YFU SNAPCHAT</h4>
+            <p class="text__details text--purple">THE HOME OF STORIES</p>
+        </div>
+        <div class="so-me__paragraph relative">
+            <img class="img__boy img" src="img/arrival.png" alt="Youtube picture">
+            <a href="https://www.youtube.com" target="_blank" class="absolute"><img class="img--small" src="img/youtube-logo.png" alt="Youtube logo"></a>
+            <h4 class="text--red">YFU YOUTUBE</h4>
+            <p class="text__details text--purple">THE HOME OF VIDEO</p>
+        </div>
+        <img class="img absolute img__abstract" src="img/abstract.png" alt="abstract doodle art">
     </section>
-    <section class="contacts">
+    <section class="contacts text--white">
+        <div class="paragraph__contacts">
+            <h6 class="text__rotated">CONTACT US</h6>
+            <p class="text__details contacts__text">+45 64 76 30 06<br/>
+                info@yfudenmark.com<br/>
+                Stationsvej 4<br/>
+                Tommerup Stationsby, Fyn<br/>
+                Denmark 5690
+            </p>
+        </div>
+        <div class="paragraph__contacts">
+            <h6 class="text__rotated">SERVICES</h6>
+            <div class="contacts__text text__details">
+                <a class="text--white" href="https://udveksling.yfu.dk/ansoeg" target="_blank">Apply Now</a>
+                <a class="text--white" href="https://www.yfu.dk/" target="_blank">Official Website of YFU</a>
+                <a class="text--white" href="https://vaertsfamilie.yfu.dk/" target="_blank">Become a Host</a>
+                <a class="text--white" href="https://udveksling.yfu.dk/prisogfinansiering" target="_blank">Process & Prices</a>
+                <a class="text--white" href="https://udveksling.yfu.dk/faq" target="_blank">FAQ</a>
+            </div>
+        </div>
+        <div class="paragraph__contacts">
+            <h6 class="text__rotated">SOCIAL MEDIA</h6>
+            <div class="contacts__text text__details">
+                <a class="text--white" href="https://www.facebook.com/yfudanmark/" target="_blank"><i class="fab fa-facebook-f"></i> Facebook</a>
+                <a class="text--white" href="https://www.instagram.com/yfudanmark/?hl=el" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+                <a class="text--white" href="https://www.snapchat.com/" target="_blank"><i class="fab fa-snapchat-ghost"></i> Snapchat</a>
+                <a class="text--white" href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i> Youtube</a>
 
+            </div>
+        </div>
+        <form class="paragraph__contacts form__footer" action="">
+            <h6 class="text--pacifico">Stay Tuned! Subscribe to our newsletter!</h6>
+            <div>
+                <input type="email" placeholder="email@email.com">
+                <input type="submit" name=""  id="submit__footer">
+            </div>
+        </form>
     </section>
 </footer>
+
 <script src="js/blog.js"></script>
 </body>
 
