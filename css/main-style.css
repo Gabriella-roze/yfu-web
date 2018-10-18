@@ -99,8 +99,11 @@ input::placeholder {
 }
 footer {
     width: 100vw;
-
 }
+a {
+    text-decoration: none;
+}
+
 
 
 
@@ -374,10 +377,36 @@ li:hover {
 /* Footer */
 .so-me {
     width: 100%;
+    height: 40vh;
 }
 .contacts {
-
+    width: 90%;
+    padding: 0px 5%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: var(--accent-color-red);
 }
+.paragraph__contacts {
+    width: 25%;
+    display: flex;
+    height: 100%;
+}
+.contacts__text {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0px 0px 10px;
+}
+.form__footer {
+    display: flex;
+    flex-direction: column;
+}
+.paragraph__contacts input {
+    margin: 0px;
+}
+
+
 
 
 /*** TEXT STYLING ***/
@@ -412,6 +441,19 @@ li:hover {
 .paragraph--small {
     width: 40%;
     margin: 20px;
+}
+.text__rotated {
+    width: 80px;
+    height: 30px;
+    margin: 0px;
+    text-align: right;
+    transform-origin: right;
+    transform: rotate(-90deg);
+}
+.text--pacifico {
+    font-family: var(--display-font);
+    font-size: 14px;
+    margin: 10px 0px;
 }
 
 
