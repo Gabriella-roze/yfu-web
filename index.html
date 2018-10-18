@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/main-style.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Pacifico" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Pacifico" rel="stylesheet">
     <title>YFU Community Home</title>
 </head>
 <body>
+	<!-- MENU -->
     <nav>
         <img class="logo--yfu clickable" src="img/yfu-logo.png" alt="YFU logotype">
         <ul>
@@ -25,6 +27,8 @@
     </nav>
     <img class="img img__clouds--left" src="img/clouds-left.png" alt="Clouds on the left">
     <img class="img img__clouds--right" src="img/clouds-right.png" alt="Clouds on the right">
+
+	<!-- VIDEO -->
     <video controls>
         <source src="yfu_video2.mp4" type="video/mp4">
         <source src="yfu_video2.ogg" type="video/ogg">
@@ -999,6 +1003,7 @@
 		<img class="img img__stars absolute" src="img/starts2.png" alt="Two stars">
 	</div>
 
+	<!-- INSTAGRAM -->
 	<section id="instagram" class="instagram relative">
 		<div class="heading--red align--center">
 			<h1 class="text__title absolute hashtag">#yfu</h1>
@@ -1008,6 +1013,7 @@
 		</div>
 	</section>
 
+	<!-- YOUTUBE -->
 	<section id="youtube" class="container__youtube relative">
 		<div class="relative heading--red">
 			<h1 class="text__title">Stay Tuned!</h1>
@@ -1019,6 +1025,7 @@
 		<img class="absolute img--m img__rocket" src="img/rocket.png" alt="A doodle of a rocket">
 	</section>
 
+	<!-- NEWSLETTER -->
 	<section id="newsletter" class="container__newsletter align--center">
 		<div class="newsletter relative">
 			<img class="absolute img__envelope" src="img/envelope.png" alt="Cartoon envelope">
@@ -1036,6 +1043,8 @@
 			<img class="absolute img__airplane--s" src="img/doodle-airplane.png" alt="A doodle of a paper airplane">
 		</div>
 	</section>
+
+	<!-- FORUM -->
 	<section id="forum" class="container__forum relative">
 		<div class="heading--red align--center">
 			<h1 class="text__title">FoRoom</h1>
@@ -1056,12 +1065,51 @@
 		</div>
 	</section>
 
+	<!-- CHATBOT -->
 	<img class="img__chatbot" src="img/chatbox.png" alt="Chat-bot icon">
+
+	<!-- FOOTER -->
 	<footer>
 		<section class="so-me">
-			<img src="img/abstract.png" alt="abstract doodle art">
+
+			<img class="img" src="img/abstract.png" alt="abstract doodle art">
 		</section>
-		<section class="contacts">
+
+		<section class="contacts text--white">
+			<div class="paragraph__contacts">
+				<h6 class="text__rotated">CONTACT US</h6>
+				<p class="text__details contacts__text">+45 64 76 30 06<br/>
+					info@yfudenmark.com<br/>
+					Stationsvej 4<br/>
+					Tommerup Stationsby, Fyn<br/>
+					Denmark 5690
+				</p>
+			</div>
+			<div class="paragraph__contacts">
+				<h6 class="text__rotated">SERVICES</h6>
+				<div class="contacts__text text__details">
+					<a class="text--white" href="https://udveksling.yfu.dk/ansoeg" target="_blank">Apply Now</a>
+					<a class="text--white" href="https://www.yfu.dk/" target="_blank">Official Website of YFU</a>
+					<a class="text--white" href="https://vaertsfamilie.yfu.dk/" target="_blank">Become a Host</a>
+					<a class="text--white" href="https://udveksling.yfu.dk/prisogfinansiering" target="_blank">Process & Prices</a>
+					<a class="text--white" href="https://udveksling.yfu.dk/faq" target="_blank">FAQ</a>
+				</div>
+			</div>
+			<div class="paragraph__contacts">
+				<h6 class="text__rotated">SOCIAL MEDIA</h6>
+				<div class="contacts__text text__details">
+					<a class="text--white" href="https://www.facebook.com/yfudanmark/" target="_blank"><i class="fab fa-facebook-f"></i> Facebook</a>
+					<a class="text--white" href="https://www.instagram.com/yfudanmark/?hl=el" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+					<a class="text--white" href="https://www.snapchat.com/" target="_blank"><i class="fab fa-snapchat-ghost"></i> Snapchat</a>
+				</div>
+			</div>
+			<form class="paragraph__contacts form__footer" action="">
+				<h6 class="text--pacifico">Stay Tuned! Subscribe to our newsletter!</h6>
+				<div>
+					<input type="email" placeholder="email@email.com">
+					<input type="submit" name="" id="">
+				</div>
+			</form>
 
 		</section>
 	</footer>
