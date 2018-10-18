@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/main-style.css">
 	<link rel="stylesheet" href="css/forum-style.css">
+	<link rel="stylesheet" href="css/blog-style.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Pacifico" rel="stylesheet">
     <title>YFU Community Home</title>
@@ -1016,6 +1017,15 @@
 
 	</section>
 
+	<!-- BLOG SPOT -->
+	<section class="relative">
+		<div class="relative heading--red">
+			<h1 class="text__title">Blog Spot</h1>
+			<img class="img absolute img__light" src="img/lightbulb.png" alt="a doodle of a light bulb and a globe inside it">
+		</div>
+		<div class="post"></div>
+	</section>
+
 	<!-- YOUTUBE -->
 	<section id="youtube" class="container__youtube relative">
 		<div class="relative heading--red">
@@ -1306,5 +1316,16 @@
 			</form>
 		</section>
 	</footer>
+	<template id="myTemplate">
+		<article>
+			<img class="postImage">
+			<h2>Title</h2>
+			<p>Short description</p>
+			<button class="btn-readmore">Read more</button>
+			<img class="icon heart_icon" src="img/heart_icon2.svg">
+			<img class="icon message_icon" src="img/message_icon2.svg">
+		</article>
+	</template>
+	<script src="js/blog.js"></script>
 </body>
 </html>

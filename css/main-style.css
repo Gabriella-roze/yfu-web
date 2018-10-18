@@ -278,7 +278,12 @@ li:hover {
     top: -20%;
     right: 5%;
 }
-
+.img__light {
+    top: -20%;
+    left: 10%;
+    transform-origin: center;
+    transform: rotate(-45deg);
+}
 .img__stars--bottom {
     top: 50%;
     left: 5%;
@@ -292,7 +297,7 @@ li:hover {
 /* Globe */
 .container__globe {
     width: 100vw;
-    height: 145vh;
+    height: 135vh;
     display: flex;
     flex-direction: column;
 }
