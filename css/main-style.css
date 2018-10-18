@@ -104,6 +104,10 @@ footer {
 a {
     text-decoration: none;
 }
+a:hover {
+    color: var(--accent-color-purple);
+    font-weight: 700;
+}
 
 
 
@@ -354,7 +358,6 @@ li:hover {
     color: white;
     background-color: var(--accent-color-purple);
     font-weight: bold;
-    width: ;
 }
 
 
@@ -382,7 +385,7 @@ li:hover {
 }
 .contacts {
     width: 90%;
-    padding: 0px 5%;
+    padding: 2% 5%;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -405,6 +408,12 @@ li:hover {
 }
 .paragraph__contacts input {
     margin: 0px;
+}
+#submit__footer {
+    height: 25px;
+    color: white;
+    background-color: var(--accent-color-purple);
+    font-weight: bold;
 }
 
 
