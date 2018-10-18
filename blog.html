@@ -2,9 +2,55 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <link rel="stylesheet" href="css/main-style.css">
+    <link rel="stylesheet" href="css/blog-style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Pacifico" rel="stylesheet">
+    <title>YFU Community Home</title>
 </head>
 <body>
+<nav>
+    <img class="logo--yfu clickable" src="img/yfu-logo.png" alt="YFU logotype">
+    <ul>
+        <li href="index.html">HOME</li>
+        <li class="current">BLOG</li>
+        <li>OUR CHANNEL</li>
+        <li>FORUM</li>
+        <li>YFU OFFICIAL</li>
+        <li>APPLY</li>
+        <div class="email__menu clickable">
+            <p>STAY TUNED!</p>
+            <p class="text__details">SIGN UP FOR OUR NEWSLETTER HERE</p>
+        </div>
+    </ul>
+    <img class="img--airplane" src="img/doodle-airplane.png" alt="A doodle of an air plane">
+</nav>
+<img class="img img__clouds--left" src="img/clouds-left.png" alt="Clouds on the left">
+<img class="img img__clouds--right" src="img/clouds-right.png" alt="Clouds on the right">
+<img class="img__chatbot" src="img/chatbox.png" alt="Chat-bot icon">
+<div class="heading--red">Blog spot</div>
 
+<div class="post"></div>
+
+<template id="myTemplate">
+    <article>
+        <img class="postImage">
+        <h2>Title</h2>
+        <p>Short description</p>
+        <button class="btn-readmore">Read more</button>
+        <img class="icon heart_icon" src="img/heart_icon2.svg">
+        <img class="icon message_icon" src="img/message_icon2.svg">
+    </article>
+</template>
+
+<footer>
+    <section class="so-me">
+
+    </section>
+    <section class="contacts">
+
+    </section>
+</footer>
+<script src="js/blog.js"></script>
 </body>
+
 </html>
